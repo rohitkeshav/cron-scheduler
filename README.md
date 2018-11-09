@@ -1,4 +1,4 @@
-# Cron Job Scheduler
+# Cron Scheduler
 
 A python wrapper that can be used as boilerplate to setup python scripts as cron jobs
 Written in a python 3.6 environment.
