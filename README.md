@@ -6,12 +6,12 @@ Feel free to play around with the sample scripts as cron jobs.
 
 ## Quick start
 
-To setup the scheduler follow - 
-    - Clone the repository - git clone link
-    - run ``` pip install requirements ```
-    - Create a python script that needs to be set as cron job
-    - Store this script under jobs or change the path as seen fit
-    - To start the cron job run - 
+To setup the scheduler follow: 
+   - Clone the repository - git clone link
+   - run ``` pip install requirements ```
+   - Create a python script that needs to be set as cron job
+   - Store this script under jobs or change the path as seen fit
+   - To start the cron job run - 
             
         ```
             python schedule_cron.py <name of python script>
