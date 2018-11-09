@@ -8,7 +8,7 @@ Feel free to play around with the sample scripts as cron jobs.
 
 To setup the scheduler follow: 
    - Clone the repository - git clone link
-   - run ``` pip install requirements ```
+   - Run - ``` pip install requirements ```
    - Create a python script that needs to be set as cron job
    - Store this script under jobs or change the path as seen fit
    - To start the cron job run - 
