@@ -3,7 +3,7 @@ import sys
 import argparse
 
 from crontab import CronTab
-from settings import BASE_DIR
+from settings import BASE_DIR, USER
 
 
 def sanitize(jb):
@@ -24,7 +24,7 @@ def run_cron(job_name):
     :caveats: The command attribute of cron.new() requires absolute path of the .py file
     """
 
-    cron = CronTab(user='rohit')
+    cron = CronTab(user=USER)
     job = cron.new(command=f'python {BASE_DIR}/jobs/{job_name}.py')
 
     job.minute.every(1)
