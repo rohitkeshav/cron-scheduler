@@ -25,7 +25,7 @@ def run_cron(job_name):
     """
 
     cron = CronTab(user='rohit')
-    job = cron.new(command=f'python {BASE_DIR}/{job_name}.py')
+    job = cron.new(command=f'python {BASE_DIR}/jobs/{job_name}.py')
 
     job.minute.every(1)
     cron.write()
@@ -38,8 +38,8 @@ if __name__ == '__main__':
 
     run_job = sanitize(args.job_name)
 
-    if not os.path.exists(f'{run_job}.py'):
-        sys.exit(f'{run_job}.py does not exist')
+    if not os.path.exists(f'jobs/{run_job}.py'):
+        sys.exit(f'{run_job}.py does not exist in jobs/')
 
     print(f'Running cron job - {run_job} \n')
 
