@@ -1,7 +1,7 @@
 # Cron Scheduler
 
-A python wrapper that can be used as boilerplate to setup python scripts as cron jobs
-Written in a python 3.6 environment.
+A python wrapper that can be used as boilerplate to setup python scripts as cron jobs.  
+Written in a python 3.6 environment.  
 Feel free to play around with the sample scripts as cron jobs.
 
 ## Quick start
